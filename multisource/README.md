@@ -6,6 +6,7 @@ The multi-source domain adaptation challenge uses [DomainNet](http://ai.bu.edu/M
 - ***Quickdraw*** (***qdr***), drawings from the worldwide players of game “[Quick Draw!](https://quickdraw.withgoogle.com/data)”; 
 - ***Real*** (***rel***), photos and real world images;
 - ***Sketch*** (***skt***), sketches of specific objects. 
+
 It is very large-scale and includes rich informative vision cues across different domains, providing a good testbed for multi-source domain adaptation. 
 
 
