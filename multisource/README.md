@@ -1,7 +1,7 @@
 
-The multi-source domain adaptation challenge uses [DomainNet](http://ai.bu.edu/M3SDA/) as the testbed. DomainNet dataset is collected to study the transfer learning task. It contains approximately 0.6 million images, distributed among 345 categories. There are four distinct domains: *Clipart* (*clp*), a collection of clipart images; *Infograph* (*inf*), infographic images with specific object; *Painting* (*pnt*), artistic depictions of object in the form of paintings; *Quickdraw* (*qdr*), drawings from the worldwide players of game “[Quick Draw!](https://quickdraw.withgoogle.com/data)”; *Real* (*rel*), photos and real world images; and *Sketch* (*skt*), sketches of specific objects. It is very large-scale and includes rich informative vision cues across different domains, providing a good testbed for multi-source domain adaptation.
+The multi-source domain adaptation challenge uses [DomainNet](http://ai.bu.edu/M3SDA/) as the testbed. DomainNet dataset is collected to study the transfer learning task. It contains approximately 0.6 million images, distributed among 345 categories. There are four distinct domains: ***Clipart*** (***clp***), a collection of clipart images; ***Infograph*** (***inf***), infographic images with specific object; ***Painting*** (***pnt***), artistic depictions of object in the form of paintings; ***Quickdraw*** (***qdr***), drawings from the worldwide players of game “[Quick Draw!](https://quickdraw.withgoogle.com/data)”; ***Real*** (***rel***), photos and real world images; and ***Sketch*** (***skt***), sketches of specific objects. It is very large-scale and includes rich informative vision cues across different domains, providing a good testbed for multi-source domain adaptation.
 
-In this multi-source domain adaptation challenge, we will utilize *Infograph*, *Quickdraw*, *Real*, and *Sketch* as the training domains, *Clipart* as the validation domain, and *Painting* as the test domain.
+In this multi-source domain adaptation challenge, we will utilize ***Infograph***, ***Quickdraw***, and ***Real*** as the training domains, ***Sketch*** as the validation domain, and ***Clipart*** and ***Painting*** as the test domain.
 
 ## Downloading Data
 
@@ -19,10 +19,12 @@ You can download the datasets with the following link:
 
 Train/val images are structured in folders as 
 
-- `{split}/{category}/{object_id}.jpg`
+- `{split}/{category}/{object_id}.jpg/png`
+
+For the training domains and validation domain, we will provide *train.txt* and *test.txt* to indicate the training trunk and testing trunk. 
 
 
-with a  single `image_list.txt` file in the root or each dataset that lists all images and corresponding labels for train/val subset. For test data, only images are provided. 
+<!--with a  single `image_list.txt` file in the root or each dataset that lists all images and corresponding labels for train/val subset. For test data, only images are provided. -->
 
 
 
