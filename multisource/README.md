@@ -1,5 +1,16 @@
 
-The multi-source domain adaptation challenge uses [DomainNet](http://ai.bu.edu/M3SDA/) as the testbed. DomainNet dataset is collected to study the transfer learning task. It contains approximately 0.6 million images, distributed among 345 categories. There are four distinct domains: ***Clipart*** (***clp***), a collection of clipart images; ***Infograph*** (***inf***), infographic images with specific object; ***Painting*** (***pnt***), artistic depictions of object in the form of paintings; ***Quickdraw*** (***qdr***), drawings from the worldwide players of game “[Quick Draw!](https://quickdraw.withgoogle.com/data)”; ***Real*** (***rel***), photos and real world images; and ***Sketch*** (***skt***), sketches of specific objects. It is very large-scale and includes rich informative vision cues across different domains, providing a good testbed for multi-source domain adaptation.
+The multi-source domain adaptation challenge uses [DomainNet](http://ai.bu.edu/M3SDA/) as the testbed. DomainNet dataset is collected to study the transfer learning task. It contains approximately 0.6 million images, distributed among 345 categories. There are four distinct domains: 
+-***Clipart*** (***clp***), a collection of clipart images; 
+-***Infograph*** (***inf***), infographic images with specific object; 
+-***Painting*** (***pnt***), artistic depictions of object in the form of paintings; 
+-***Quickdraw*** (***qdr***), drawings from the worldwide players of game “[Quick Draw!](https://quickdraw.withgoogle.com/data)”; 
+-***Real*** (***rel***), photos and real world images;
+-***Sketch*** (***skt***), sketches of specific objects. 
+It is very large-scale and includes rich informative vision cues across different domains, providing a good testbed for multi-source domain adaptation. 
+
+
+![alt text](http://ai.bu.edu/M3SDA/imgs/data_examples.png "DomainNet Image Examples")
+![alt text](http://ai.bu.edu/M3SDA/imgs/statistics.png "DomainNet Statistics")
 
 In this multi-source domain adaptation challenge, we will utilize ***Infograph***, ***Quickdraw***, and ***Real*** as the training domains, ***Sketch*** as the validation domain, and ***Clipart*** and ***Painting*** as the test domain.
 
