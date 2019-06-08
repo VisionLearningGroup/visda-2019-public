@@ -42,15 +42,6 @@ sketch_val.txt lists validation examples.
 In the test phase, you will be given the similar txt files.
 Of course, target_unl.txt will not include ground truth label in the test phase.
 
-## Baselines and Rules
-This repo includes baselines "S+T", "ENT", "MME".
-
-- "S+T" is the model trained with source examples and labeled target examples. This model does not use any adaptation method.
-
-- "ENT" is the model trained with unlabeled target examples using entropy minimization in addition to labeled source and target examples
-
-- "MME" is a method for semi-supervised domain adaptation ([arxiv](https://arxiv.org/abs/1904.06487)). This method utilizes domain-adaptive entropy minimization.
-
 
 ## Training
 
@@ -68,6 +59,43 @@ where, gpu_id = 0,1,2,3...., method=[MME,ENT,S+T].
 where, method=[MME,ENT,S+T], steps = which iterations to evaluate.
 It will output output.txt. Change the name of this file to upload to codalab.
 
+Calculate the mean accuracies for each category and the overall mean of these accuracies.
+We have provided the evaluation script in sample/eval_results.py so that you may evaluate your results offline.
+You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants.
+
+
+## Baselines and Rules
+
+### Baselines
+This repo includes baselines "S+T", "ENT", "MME".
+
+- "S+T" is the model trained with source examples and labeled target examples. This model does not use any adaptation method.
+
+- "ENT" is the model trained with unlabeled target examples using entropy minimization in addition to labeled source and target examples
+
+- "MME" is a method for semi-supervised domain adaptation ([arxiv](https://arxiv.org/abs/1904.06487)). This method utilizes domain-adaptive entropy minimization.
+
+### Rules
+The domain we will use in validation phase is the following ones.
+
+- Source Domain: Real
+- Target Domain: Sketch
+
+In this track, you need to output predictions for all files in target_unl.txt (In the validation phase, target = sketch).
+You can use label of examples in source domain and labeled training examples in the target domain.
+In addition to the labeled examples, you can use unlabeled target examples in an unsupervised way.
+Unsupervised way means that you are not allowed to manually give annotation to the examples.
+
+**Please note that although we provide data of main domains in multi-source domain adaptation track,
+in this track, you are not allowed to use multi-source domains data.
+The data you can use as the source domain is what we specify in this semi-supervised DA folder.
+(In validation phase, source is "real domain".)**
+
+In addition, labeled validation examples are not allowed to train a model.
+They can be used only to validate the performance of the model (We are discussing whether we will provide the valiation examples or not in the test phase.).
+
+
+
 ## Submission
 
 The evaluation code above will output a file that can be correctly
@@ -82,8 +110,9 @@ Submissions will be evaluated by calculating the classification accuracy of each
 
 ### Evaluation Server and Leaderboards
 
-We are using CodaLab to evaluate results and host the leaderboards for this challenge. You can find the image classification competition [here](https://competitions.codalab.org/competitions/19113).
+We are using CodaLab to evaluate results and host the leaderboards for this challenge. You can find the image classification competition [here](https://competitions.codalab.org/competitions/22469).
 There are two competition leaderboards: the main leaderboard shows results of adapted models and will be used to determine the final team ranks. The expanded leaderboard additionally shows the team's source-only models, i.e. those trained only on the source domain without any adaptation. These results are useful for estimating how much the method improves upon its source-only model, but will not be used to determine team ranks.
+
 
 ### Submitting to the Evaluation Server
 

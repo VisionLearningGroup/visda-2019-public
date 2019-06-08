@@ -1,0 +1,8 @@
+gt_label.txt has filelists and corresponding category number.
+sample_output.txt has the sample submission file.
+label2category lists correspondence between label number and category.
+
+python eval_results.py gt_label.txt sample_output.txt label2category.txt
+
+It will output accuracy over all all examples, accuracy averaged over all classes,
+and a file that shows per class accuracy.
