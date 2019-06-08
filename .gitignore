@@ -13,6 +13,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+sample/eval_results.py
+sample/README
 # C extensions
 *.so
 
