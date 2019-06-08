@@ -47,14 +47,14 @@ Of course, target_unl.txt will not include ground truth label in the test phase.
 
 To run training using alexnet,
 
-`sh run_multi.sh gpu_id method alexnet`
+`sh run_train.sh gpu_id method alexnet`
 
 where, gpu_id = 0,1,2,3...., method=[MME,ENT,S+T].
 
 
 ## Evaluation
 
-`sh run_multi_eval.sh gpu_id method alexnet steps`
+`sh run_eval.sh gpu_id method alexnet steps`
 
 where, method=[MME,ENT,S+T], steps = which iterations to evaluate.
 It will output output.txt. Change the name of this file to upload to codalab.
