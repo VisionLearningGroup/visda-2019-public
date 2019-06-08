@@ -17,7 +17,7 @@ from utils.loss import entropy, adentropy
 # Training settings
 parser = argparse.ArgumentParser(description='Visda Classification')
 parser.add_argument('--steps', type=int, default=50000, metavar='N',
-                    help='number of iterations to train (default: 10)')
+                    help='number of iterations to train (default: 50000)')
 parser.add_argument('--method', type=str, default='MME', choices=['S+T', 'ENT', 'MME'],
                     help='MME is proposed method, ENT is entropy minimization, S+T is training only on labeled examples')
 parser.add_argument('--lr', type=float, default=0.01, metavar='LR',
@@ -32,8 +32,6 @@ parser.add_argument('--save_check', action='store_true', default=False,
                     help='save checkpoint or not')
 parser.add_argument('--checkpath', type=str, default='./save_model_ssda',
                     help='dir to save checkpoint')
-parser.add_argument('--save_feat', action='store_true', default=False,
-                    help='save feature or not')
 parser.add_argument('--seed', type=int, default=1, metavar='S',
                     help='random seed (default: 1)')
 parser.add_argument('--log-interval', type=int, default=100, metavar='N',
@@ -208,7 +206,7 @@ def train():
             G.train()
             F1.train()
             if args.save_check:
-                print('saving')
+                print('saving model')
                 torch.save(G.state_dict(), os.path.join(args.checkpath,
                                                           "G_iter_model_{}_{}_to_{}_step_{}.pth.tar".format(
                                                               args.method, args.source, args.target, step)))
