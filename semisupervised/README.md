@@ -99,7 +99,7 @@ They can be used only to validate the performance of the model (We are discussin
 ## Submission
 
 The evaluation code above will output a file that can be correctly
-evaluated in the codalab.
+evaluated in the [codalab](https://competitions.codalab.org/competitions/23369).
 If you use your own code to make a submission file, make sure that
 your file has the same number of lines, each line corresponds to
 the image file.
