@@ -105,7 +105,7 @@ your file has the same number of lines, each line corresponds to
 the image file.
 The sample output file is stored in ./sample/sample_output.txt.
 
-Submissions will be evaluated by calculating the classification accuracy of each category and then the mean accuracy across all categories (i.e. known and unknown).
+Submissions will be evaluated by calculating the classification accuracy of each category and then the mean accuracy across all categories.
 
 
 ### Evaluation Server and Leaderboards
