@@ -13,7 +13,6 @@ from utils.utils import weights_init
 from utils.lr_schedule import inv_lr_scheduler
 from utils.return_dataset import return_dataset
 from utils.loss import entropy, adentropy
-
 # Training settings
 parser = argparse.ArgumentParser(description='Visda Classification')
 parser.add_argument('--steps', type=int, default=50000, metavar='N',
