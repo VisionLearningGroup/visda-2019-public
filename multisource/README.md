@@ -71,8 +71,8 @@ We are using CodaLab to evaluate results and host the leaderboards for this chal
 ### Submitting to the Evaluation Server
  
 Once the servers become available, you will be able to submit your results:
-- Generate "source_results.txt" and "adaptation_results.txt".
-- Place these files into a zip file named [team_name]_submission
+- Generate "result.txt"
+- Place the result file into a zip file named [team_name]_submission
 - Submit to the CodaLab evaluation server following the instructions below
 
 To submit your zipped result file to the appropriate VisDA challenge click on the “Participate” tab. Select the phase (validation or testing). Select “Submit / View Results, fill in the required fields and click “Submit”. A pop-up will prompt you to select the results zip file for upload. After the file is uploaded, the evaluation server will begin processing. This might take some time. To view the status of your submission please select “Refresh Status”. If the status of your submission is “Failed” please check your file is named correctly and has the right format. You may refer to the scoring output and error logs for more details.
