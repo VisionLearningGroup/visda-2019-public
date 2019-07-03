@@ -117,7 +117,7 @@ There are two competition leaderboards: the main leaderboard shows results of ad
 ### Submitting to the Evaluation Server
 
 Once the servers become available, you will be able to submit your results:
-- Generate "source_results.txt" and "adaptation_result.txt".
+- Generate "result.txt"
 - Place these files into a zip file named [team_name]_submission
 - Submit to the CodaLab evaluation server following the instructions below
 
