@@ -1,5 +1,9 @@
 # Semi-supervised domain adaptation repository for VisDA 2019 Challenge
 
+## Note
+We have changed a codalab competition website because the codalab website experienced a major crash.
+The new page is here [codalab](https://competitions.codalab.org/competitions/20257).
+
 ## Introduction
 This repository is for VisDA 2019 Semi-supervised Domain Adaptation track.
 Please note that this repo is for validation phase, so you need to modify some part
@@ -99,7 +103,7 @@ They can be used only to validate the performance of the model (We are discussin
 ## Submission
 
 The evaluation code above will output a file that can be correctly
-evaluated in the [codalab](https://competitions.codalab.org/competitions/23369).
+evaluated in the [codalab](https://competitions.codalab.org/competitions/20257).
 If you use your own code to make a submission file, make sure that
 your file has the same number of lines, each line corresponds to
 the image file.
@@ -110,14 +114,14 @@ Submissions will be evaluated by calculating the classification accuracy of each
 
 ### Evaluation Server and Leaderboards
 
-We are using CodaLab to evaluate results and host the leaderboards for this challenge. You can find the image classification competition [here](https://competitions.codalab.org/competitions/23369).
+We are using CodaLab to evaluate results and host the leaderboards for this challenge. You can find the image classification competition [here](https://competitions.codalab.org/competitions/20257).
 There are two competition leaderboards: the main leaderboard shows results of adapted models and will be used to determine the final team ranks. The expanded leaderboard additionally shows the team's source-only models, i.e. those trained only on the source domain without any adaptation. These results are useful for estimating how much the method improves upon its source-only model, but will not be used to determine team ranks.
 
 
 ### Submitting to the Evaluation Server
 
 Once the servers become available, you will be able to submit your results:
-- Generate "source_results.txt" and "adaptation_result.txt".
+- Generate "result.txt".
 - Place these files into a zip file named [team_name]_submission
 - Submit to the CodaLab evaluation server following the instructions below
 
