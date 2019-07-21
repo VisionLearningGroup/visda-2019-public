@@ -56,7 +56,7 @@ Please refer to the [challenge rules](http://ai.bu.edu/visda-2017/) for specific
 
 To evaluate the performance of your adaptation model, you should:
 - Train your model with training data (with labels) and adapt it on the validation data (without labels).
-- Predict labels for images in the validation set. The results file should follow the format of one category ID prediction per line, in the order of images provided by `image_list.txt`. Please see a sample submission file [here](https://github.com/VisionLearningGroup/visda-2018-public/edit/master/openset/results/example_predictions.txt).
+- Predict labels for images in the validation set. The results file should follow the format of one category ID prediction per line, in the order of images provided by `image_list.txt`. Please see a sample submission file [here](https://github.com/VisionLearningGroup/visda-2019-public/blob/master/multisource/submission_example/result.txt).
 - Calculate the mean accuracies for each category and the overall mean of these accuracies. We have provided the evaluation script used by our server ([eval.py](https://github.com/VisionLearningGroup/visda-2018-public/edit/master/openset/eval.py)) so that you may evaluate your results offline. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants. 
 
 
@@ -66,13 +66,13 @@ Submissions will be evaluated by calculating the classification accuracy of each
 
 ### Evaluation Server and Leaderboards
  
-We are using CodaLab to evaluate results and host the leaderboards for this challenge. You can find the image classification competition [here](https://competitions.codalab.org/competitions/19113). There are two competition leaderboards: the main leaderboard shows results of adapted models and will be used to determine the final team ranks. The expanded leaderboard additionally shows the team's source-only models, i.e. those trained only on the source domain without any adaptation. These results are useful for estimating how much the method improves upon its source-only model, but will not be used to determine team ranks.
+We are using CodaLab to evaluate results and host the leaderboards for this challenge. You can find the image classification competition [here](https://competitions.codalab.org/competitions/23529). There are two competition leaderboards: the main leaderboard shows results of adapted models and will be used to determine the final team ranks. The expanded leaderboard additionally shows the team's source-only models, i.e. those trained only on the source domain without any adaptation. These results are useful for estimating how much the method improves upon its source-only model, but will not be used to determine team ranks.
 
 ### Submitting to the Evaluation Server
  
 Once the servers become available, you will be able to submit your results:
-- Generate "source_results.txt" and "adaptation_results.txt".
-- Place these files into a zip file named [team_name]_submission
+- Generate "result.txt"
+- Place the result file into a zip file named [team_name]_submission
 - Submit to the CodaLab evaluation server following the instructions below
 
 To submit your zipped result file to the appropriate VisDA challenge click on the “Participate” tab. Select the phase (validation or testing). Select “Submit / View Results, fill in the required fields and click “Submit”. A pop-up will prompt you to select the results zip file for upload. After the file is uploaded, the evaluation server will begin processing. This might take some time. To view the status of your submission please select “Refresh Status”. If the status of your submission is “Failed” please check your file is named correctly and has the right format. You may refer to the scoring output and error logs for more details.
