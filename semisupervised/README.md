@@ -136,7 +136,7 @@ If you consider using this code or its derivatives, please consider citing:
 @article{saito2019semi,
   title={Semi-supervised Domain Adaptation via Minimax Entropy},
   author={Saito, Kuniaki and Kim, Donghyun and Sclaroff, Stan and Darrell, Trevor and Saenko, Kate},
-  journal={arXiv preprint arXiv:1904.06487},
+  journal={ICCV},
   year={2019}
 }
 ```
