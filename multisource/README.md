@@ -54,13 +54,22 @@ Please refer to the [challenge rules](http://ai.bu.edu/visda-2017/) for specific
 
 ## Evaluating your Model
 
+Ideally, you should train two ***identical*** models with the same strategy/approach/hyperparameter on following settings:
+
+***Model I***: Train on labeled images in sketch_train.txt (#49,115) /real_train.txt (#122,563) /quickdraw_train.txt (#120,750) /infograph_train.txt (#37,087) +  unlabeled images in clipart_train.txt  (#34,019), Test on unlabeled  images in clipart_test.txt  (#14,818). 
+***Model II***: Train on labeled images in sketch_train.txt (#49,115) /real_train.txt (#122,563) /quickdraw_train.txt (#120,750) /infograph_train.txt (#37,087) +  unlabeled images in painting_train.txt (#52,867), Test on unlabeled images in painting_test.txt (#22,892).
+
+The submission file should contain the predictions of model I on 14,818 testing images and the predictions of model II on 22,892 testing images. The final ranking will be determined by how many correct predictions do the submission file have within the (14,818+22,892) images. 
+One  submission example can be found with the following link: https://github.com/VisionLearningGroup/visda-2019-public/blob/master/multisource/submission_example/result.txt
+
+
 To evaluate the performance of your adaptation model, you should:
 - Train your model with training data (with labels) and adapt it on the validation data (without labels).
 - Predict labels for images in the validation set. The results file should follow the format of one category ID prediction per line, in the order of images provided by [submission_list.txt](http://csr.bu.edu/ftp/visda/2019/multi-source/txt/submission_list.txt). Please see a sample submission file [here](https://github.com/VisionLearningGroup/visda-2019-public/blob/master/multisource/submission_example/result.txt).
 - Calculate the mean accuracies for each category and the overall mean of these accuracies. We have provided the evaluation script used by our server ([eval.py](https://github.com/VisionLearningGroup/visda-2018-public/edit/master/openset/eval.py)) so that you may evaluate your results offline. You are encouraged to upload your results to the evaluation server to compare your performance with that of other participants. 
 
 
- 
+
 
 Submissions will be evaluated by calculating the classification accuracy of each category and then the mean accuracy across all categories (i.e. known and unknown). The leaderboard on CodaLab will display all of these scores, and the official ranking will be determined by the mean classification accuracy across all categories. 
 
