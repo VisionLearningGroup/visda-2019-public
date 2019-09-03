@@ -1,6 +1,8 @@
 # Semi-supervised domain adaptation repository for VisDA 2019 Challenge
 
 ## News
+2019/09/03 Clipart data had wrong filenames. We reuploaded it. Sorry for the inconvenience again.
+2019/09/02 The test data link issue was fixed. Sorry for the inconvenience.
 2019/09/01 We have released the test data. See data preparation and rule section.
 
 2019/07 We have changed a codalab competition website because the codalab website experienced a major crash.
@@ -81,7 +83,7 @@ The domain we will use in testing phase is the following ones.
 We have two target domains, you need to separately train **two different models**, Real to Clipart adapted model and Real to Painting adapted model.
 Using the other domain's data to train a model is not allowed even in an unsupervised way. For example, to train a model for Real to Clipart setting,
 the only data you can use is Real and Clipart data.
-You need to give predictions to Clipart with clipart-adapted models and Painting with painting-adapted models. 
+You need to give predictions to Clipart with clipart-adapted models and Painting with painting-adapted models.
 Please see Submission section below.
 
 You can use label of examples in source domain and labeled training examples in the target domain.
