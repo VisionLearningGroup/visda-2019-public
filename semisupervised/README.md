@@ -1,7 +1,7 @@
 # Semi-supervised domain adaptation repository for VisDA 2019 Challenge
 
 ## News
-2019/09/03 Clipart data had wrong filenames. We reuploaded it. Sorry for the inconvenience again.
+2019/09/03 **Clipart data had wrong filenames. We reuploaded it. Sorry for the inconvenience again.**
 2019/09/02 The test data link issue was fixed. Sorry for the inconvenience.
 2019/09/01 We have released the test data. See data preparation and rule section.
 
