@@ -56,11 +56,11 @@ Please refer to the [challenge rules](http://ai.bu.edu/visda-2017/) for specific
 
 Ideally, you should train two ***identical*** models with the same strategy/approach/hyperparameter on following settings:
 
-***Model I***: Train on labeled images in ***sketch_train***.txt (#49,115) /***real_train***.txt (#122,563) /***quickdraw_train***.txt (#120,750) /***infograph_train***.txt (#37,087) +  unlabeled images in ***clipart_train***.txt  (#34,019), Test on unlabeled  images in ***clipart_test***.txt  (#14,818). 
+***Model I***: Train on labeled images in ***sketch_train***.txt (#49,115) /***real_train***.txt (#122,563) /***quickdraw_train***.txt (#120,750) /***infograph_train***.txt (#37,087) +  unlabeled images in ***clipart_train***.txt  (#34,019), Test on unlabeled  images in ***clipart_test***.txt  (#14,814). 
 
 ***Model II***: Train on labeled images in ***sketch_train***.txt (#49,115) /***real_train***.txt (#122,563) /***quickdraw_train***.txt (#120,750) /***infograph_train***.txt (#37,087) +  unlabeled images in ***painting_train***.txt (#52,867), Test on unlabeled images in ***painting_test***.txt (#22,892).
 
-The submission file should contain the predictions of model I on 14,818 testing images and the predictions of model II on 22,892 testing images. The final ranking will be determined by how many correct predictions do the submission file have within the (14,818+22,892) images. 
+The submission file should contain the predictions of model I on 14,814 testing images and the predictions of model II on 22,892 testing images. The final ranking will be determined by how many correct predictions do the submission file have within the (14,814+22,892) images. 
 One  submission example can be found with the following link: https://github.com/VisionLearningGroup/visda-2019-public/blob/master/multisource/submission_example/result.txt
 
 
